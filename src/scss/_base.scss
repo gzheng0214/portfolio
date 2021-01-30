@@ -1,0 +1,21 @@
+/*
+* @Author: Gavin
+* @Date:   2021-01-29 19:23:17
+* @Last Modified by:   Gavin
+* @Last Modified time: 2021-01-29 19:23:36
+*/
+*,
+*::after,
+a::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+	box-sizing: border-box;
+}
