@@ -1,0 +1,121 @@
+/*
+* @Author: Gavin
+* @Date:   2021-01-30 01:56:32
+* @Last Modified by:   Gavin
+* @Last Modified time: 2021-02-01 18:52:05
+*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__links {
+        list-style: none;
+        display: flex;
+        width: 70rem;
+        justify-content: space-between;
+
+        @media screen and (max-width: 62.5em) {
+            width: 60rem;
+        }
+
+        @media screen and (max-width: 56.25em) {
+            width: 55rem;
+        }
+
+        @media screen and (max-width: 50em) {
+            display: none;
+        }
+
+        a:link,
+        a:visited {
+            display: inline-block;
+            text-decoration: none;
+            color: $color-light-brown;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            transition: transform .1s;
+        }
+
+    }
+
+    &__link {
+        border: 1px solid transparent;
+        transition: border-color .1s;
+
+        &:hover {
+            border: 1px solid $color-light-brown;
+
+            a {
+                background-color: $color-light-brown;
+                color: $color-dark-purple;
+                transform: translate(-3px, -4px);
+
+                &:active {
+                    transform: translate(0);
+                }
+            }
+        }
+    }
+
+    &__hamburger {
+        width: 4.8rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        display: none;
+
+
+        @media screen and (max-width: 50em) {
+            display: block;
+        }
+
+        span {
+            display: block;
+            height: 2px;
+            transition: transform .2s;
+        }
+
+        &--closed {
+        	background-color: $color-light-brown;
+            &:not(:last-child) {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        &--open {
+        	background-color: red;
+            &:nth-child(1) {
+                margin-top: 1.2rem;
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.logo {
+    width: 13rem;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-weight: 700;
+        font-size: 2.6rem;
+        letter-spacing: .32px;
+        padding-left: .7rem;
+    }
+}
