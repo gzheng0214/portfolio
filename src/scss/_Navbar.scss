@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-01-30 01:56:32
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-01 18:52:05
+* @Last Modified time: 2021-02-02 04:01:30
 */
 
 .navbar {
@@ -70,7 +70,7 @@
         flex-direction: column;
         cursor: pointer;
         display: none;
-
+        position: relative;
 
         @media screen and (max-width: 50em) {
             display: block;
@@ -79,30 +79,52 @@
         span {
             display: block;
             height: 2px;
-            transition: transform .2s;
+            transform: translateY(1.4rem);
+
+            &::before,
+            &::after {
+                height: 2px;
+                content: "";
+                width: 100%;
+                position: absolute;
+                transition: transform .2s;
+            }
         }
 
         &--closed {
-        	background-color: $color-light-brown;
-            &:not(:last-child) {
-                margin-bottom: 1.2rem;
+            background-color: $color-light-brown;
+
+            &::before,
+            &::after {
+                background-color: $color-light-brown;
+            }
+
+            &::before {
+                top: -1.4rem;
+            }
+
+            &::after {
+                top: 1.4rem;
             }
         }
 
         &--open {
-        	background-color: red;
-            &:nth-child(1) {
-                margin-top: 1.2rem;
+            display: none;
+
+            &::before,
+            &::after {
+                top: 0;
+                background-color: red;
+            }
+
+            &::before {
                 transform: rotate(45deg);
             }
 
-            &:nth-child(2) {
-                display: none;
-            }
-
-            &:nth-child(3) {
+            &::after {
                 transform: rotate(-45deg);
             }
+
         }
     }
 }
