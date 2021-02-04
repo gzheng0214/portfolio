@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-01-30 01:44:33
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-04 01:49:18
+ * @Last Modified time: 2021-02-04 03:23:30
  */
 import React, {useState, useEffect}from 'react';
 import { ReactComponent as Logo } from '../images/faceIcon.svg';
@@ -38,7 +38,7 @@ const Navbar = () => {
 			<Logo />
 			<span className="logo__text">Gavin</span>
 		</div>
-		<ul className="navbar__links" onClick={onClick} style={open ? {transform: "translateX(0)", opacity: "1"} : {}} >
+		<ul className="navbar__links" onClick={onClick} >
 			<li className="navbar__link">
 				<a href="">&lt;about&gt;</a>
 			</li>
@@ -49,6 +49,20 @@ const Navbar = () => {
 				<a href="">&lt;projects&gt;</a>
 			</li>
 			<li className="navbar__link">
+				<a href="">&lt;contact&gt;</a>
+			</li>
+		</ul>
+		<ul className="navbar__links--mobile" onClick={onClick} style={open ? {transform: "translateX(0)"} : {}} >
+			<li className="navbar__link--mobile">
+				<a href="">&lt;about&gt;</a>
+			</li>
+			<li className="navbar__link--mobile">
+				<a href="">&lt;skills&gt;</a>
+			</li>
+			<li className="navbar__link--mobile">
+				<a href="">&lt;projects&gt;</a>
+			</li>
+			<li className="navbar__link--mobile">
 				<a href="">&lt;contact&gt;</a>
 			</li>
 		</ul>

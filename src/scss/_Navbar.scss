@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-01-30 01:56:32
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-04 01:49:20
+* @Last Modified time: 2021-02-04 03:40:58
 */
 
 .navbar {
@@ -16,7 +16,6 @@
         display: flex;
         width: 70rem;
         justify-content: space-between;
-        position: relative;
 
         @media screen and (max-width: 62.5em) {
             width: 60rem;
@@ -27,24 +26,7 @@
         }
 
         @media screen and (max-width: 50em) {
-            flex-direction: column;
-            position: fixed;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            align-items: center;
-            background-color: $color-light-brown;
-            padding-top: 12.8rem;
-            padding-bottom: 16.8rem;
-            transform: translateX(100%);
-            transition: transform .5s;
-            opacity: 0;
-        }
-
-        @media screen and (max-width: 50em) and (orientation: landscape) {
-            padding-top: 8rem;
-            padding-bottom: 3rem;
+            display: none;
         }
 
         a:link,
@@ -58,13 +40,51 @@
             padding-left: 1rem;
             padding-right: 1rem;
             transition: transform .1s;
+        }
+
+        &--mobile {
+            visibility: hidden;
+            list-style: none;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            align-items: center;
+            background-color: $color-light-brown;
+            padding-top: 12.8rem;
+            padding-bottom: 16.8rem;
+            transform: translateX(100%);
+            transition: transform .5s;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
 
             @media screen and (max-width: 50em) {
+                visibility: visible;
+            }
+
+            @media screen and (max-width: 50em) and (orientation: landscape) {
+                padding-top: 8rem;
+                padding-bottom: 3rem;
+            }
+
+
+            a:link,
+            a:visited {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 2rem;
+                font-weight: 700;
+                letter-spacing: .3rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                transition: transform .1s;
                 color: $color-dark-purple;
             }
         }
-
     }
+
 
     &__link {
         border: 1px solid transparent;
@@ -81,17 +101,26 @@
                 &:active {
                     transform: translate(0);
                 }
+            }
+        }
 
-                @media screen and (max-width: 50em) {
+        &--mobile {
+            border: 1px solid transparent;
+            transition: border-color .1s;
+
+            &:hover {
+                border: 1px solid $color-dark-purple;
+
+                a {
                     background-color: $color-dark-purple;
                     color: $color-light-brown;
+                    transform: translate(-3px, -4px);
+
+                    &:active {
+                        transform: translate(0);
+                    }
                 }
             }
-
-            @media screen and (max-width: 50em) {
-                border: 1px solid $color-dark-purple;
-            }
-
         }
     }
 
