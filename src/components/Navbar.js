@@ -2,34 +2,36 @@
  * @Author: Gavin
  * @Date:   2021-01-30 01:44:33
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-04 03:23:30
+ * @Last Modified time: 2021-02-04 03:51:58
  */
-import React, {useState, useEffect}from 'react';
+import React, { useState, useEffect } from 'react';
 import { ReactComponent as Logo } from '../images/faceIcon.svg';
 
 const Navbar = () => {
-	const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
     const onClick = (e) => {
         e.preventDefault();
+        if (!e.target.closest('a')) return;
+        setOpen(!open);
     };
 
     const menuClassName = open ? 'navbar__hamburger--open' : 'navbar__hamburger--closed';
 
     useEffect(() => {
-    	window.matchMedia("(min-width: 801px)").addListener((x) => {
-    		if (x.matches) {
-    			setOpen(false);
-    		}
-    	});
+        window.matchMedia("(min-width: 801px)").addListener((x) => {
+            if (x.matches) {
+                setOpen(false);
+            }
+        });
     }, []);
 
     useEffect(() => {
-    	if (open) {
-    		document.body.classList.add('noScroll');
-    	} else {
-    		document.body.classList.remove('noScroll');
-    	}
+        if (open) {
+            document.body.classList.add('noScroll');
+        } else {
+            document.body.classList.remove('noScroll');
+        }
     }, [open]);
 
     return (
