@@ -1,0 +1,38 @@
+/*
+* @Author: Gavin
+* @Date:   2021-02-07 03:13:04
+* @Last Modified by:   Gavin
+* @Last Modified time: 2021-02-07 04:39:35
+*/
+.listSkills {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    height: 24.8rem;
+    background-color: $color-floral-white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    justify-items: center;
+    align-content: center;
+    grid-auto-rows: 1.8rem;
+    grid-row-gap: 2rem;
+
+    @media screen and (max-width: 75em) {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    @media screen and (max-width: 56.25em) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @media screen and (max-width: 47.8125em) {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        height: 17.1rem;
+    }
+
+    @media screen and (max-width: 18.7em) {
+    	grid-row-gap: 1rem;
+    }
+}

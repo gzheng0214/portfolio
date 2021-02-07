@@ -1,0 +1,17 @@
+/*
+* @Author: Gavin
+* @Date:   2021-02-07 03:06:22
+* @Last Modified by:   Gavin
+* @Last Modified time: 2021-02-07 03:57:15
+*/
+
+.listItem {
+	font-weight: 700;
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+
+	svg {
+		margin-right: 1.2rem;
+	}
+}
