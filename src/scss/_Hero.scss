@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-01-29 20:05:09
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-07 04:39:30
+* @Last Modified time: 2021-02-07 07:00:06
 */
 .header {
     height: 80rem;
@@ -26,4 +26,24 @@
         padding-left: 3.2rem;
         padding-right: 3.2rem;
     }
+}
+
+.content {
+    height: calc(100% - 5.6rem);
+    display: grid;
+    align-content: center;
+    grid-template-columns: calc(100% - 49rem) 49rem;
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21.8rem;
 }

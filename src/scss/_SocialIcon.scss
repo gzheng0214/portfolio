@@ -1,0 +1,28 @@
+/*
+* @Author: Gavin
+* @Date:   2021-02-07 05:46:36
+* @Last Modified by:   Gavin
+* @Last Modified time: 2021-02-07 06:26:34
+*/
+
+.socialIcon {
+	height: 4.9rem;
+	width: 4.9rem;
+	border: 1px solid $color-light-brown;
+	position: relative;
+
+	&__image {
+		height: 100%;
+		width:  100%;
+		border: 1px solid transparent;
+		background-color: $color-light-brown;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: translate(-2.5px, -3px);
+
+		&:hover svg path {
+			fill: $color-dark-purple;
+		}
+	}
+}
