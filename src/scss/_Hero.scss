@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-01-29 20:05:09
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-07 20:54:05
+* @Last Modified time: 2021-02-07 21:26:15
 */
 .header {
     height: 80rem;
@@ -41,6 +41,7 @@
     height: calc(100% - 5.6rem);
     display: flex;
     align-items: center;
+    margin-top: 5.6rem;
 }
 
 .content {

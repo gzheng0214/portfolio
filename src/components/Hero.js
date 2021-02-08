@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-01-29 19:19:35
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-07 19:33:25
+ * @Last Modified time: 2021-02-08 01:28:29
  */
 import React from 'react';
 import Navbar from './Navbar';
@@ -27,7 +27,7 @@ const Hero = () => {
 			</div>
 			<div className="content__right">
 				<img src={computer} alt="Computer" />
-				<div class="socialIcons">
+				<div className="socialIcons">
 					<SocialIcon url="https://github.com/gzheng0214"><Github /></SocialIcon>
 					<SocialIcon url="https://linkedin.com/in/gzheng0214"><Linkedin /></SocialIcon>
 					<SocialIcon url="mailto:gzheng0214@gmail.com"><Mail /></SocialIcon>
