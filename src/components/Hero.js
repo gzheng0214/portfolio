@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-01-29 19:19:35
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-08 01:28:29
+ * @Last Modified time: 2021-02-08 13:53:03
  */
 import React from 'react';
 import Navbar from './Navbar';
@@ -18,14 +18,14 @@ const Hero = () => {
     return (
         <header className="header">
 			<Navbar />
-			<div className="container">
-			<div className="content">
-			<div className="content__left">
+			<div className="header__container">
+			<div className="header-content">
+			<div className="header-content__left">
 			<OrangeLine />
 			<h1>Welcome to my <br /> Personal Website</h1>
 			<p>Let's create something amazing together!</p>
 			</div>
-			<div className="content__right">
+			<div className="header-content__right">
 				<img src={computer} alt="Computer" />
 				<div className="socialIcons">
 					<SocialIcon url="https://github.com/gzheng0214"><Github /></SocialIcon>

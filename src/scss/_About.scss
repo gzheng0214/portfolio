@@ -1,0 +1,129 @@
+/*
+* @Author: Gavin
+* @Date:   2021-02-08 13:26:15
+* @Last Modified by:   Gavin
+* @Last Modified time: 2021-02-08 18:30:15
+*/
+.about {
+
+    background: url(../images/noise.png), $color-dark-green;
+    padding-top: 7.8rem;
+    padding-bottom: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-black;
+
+    @media screen and (max-width: 75em) {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    @media screen and (max-width: 56.25em) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @media screen and (max-width: 47.8125em) {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+
+    .title h1 {
+        color: $color-light-brown;
+    }
+
+    &__container {
+        background-color: $color-dark-purple;
+        margin-top: 6.8rem;
+        border: 1px solid $color-sea-green;
+        position: relative;
+        display: grid;
+        grid-template-rows: 54rem;
+        grid-template-columns: minmax(25rem, 75rem);
+
+        @media screen and (max-width: 50em) {
+            grid-template-rows: 75rem;
+        }
+
+        @media screen and (max-width: 43.75em) {
+            grid-template-rows: 80rem;
+        }
+
+
+        @media screen and (max-width: 31.25em) {
+            grid-template-rows: 90rem;
+        }
+
+        @media screen and (max-width: 25em) {
+            grid-template-rows: 100rem;
+        }
+
+        @media screen and (max-width: 20.625em) {
+            grid-template-rows: 110rem;
+        }
+    }
+
+    &-content {
+        height: 100%;
+        width: 100%;
+        border: 1px solid $color-sea-green;
+        background-color: $color-white;
+        position: absolute;
+        top: -.8rem;
+        left: -.7rem;
+        padding: 5.3rem;
+        font-weight: 700;
+        line-height: 1.3;
+
+        @media screen and (max-width: 43.75em) {
+            top: -.5rem;
+            left: -.3rem;
+        }
+
+        p {
+            margin-bottom: 3.4rem;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+            grid-column-gap: 3rem;
+
+
+            @media screen and (max-width: 31.25em) {
+                grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+            }
+        }
+
+        &__image {
+            height: 23rem;
+            width: 29rem;
+            background-color: $color-black;
+
+            @media screen and (max-width: 31.25em) {
+                height: 20rem;
+                width: 25rem;
+            }
+
+            @media screen and (max-width: 25em) {
+                height: 13rem;
+                width: 17rem;
+            }
+        }
+
+        &__skills {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(11rem, 20rem));
+
+            .listItem {
+                font-size: 1.6rem;
+            }
+        }
+
+        div:nth-child(2) {
+            margin-top: 3rem;
+        }
+    }
+}

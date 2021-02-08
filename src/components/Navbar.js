@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-01-30 01:44:33
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-08 01:54:05
+ * @Last Modified time: 2021-02-08 12:14:57
  */
 import React, { useState, useEffect, useCallback } from 'react';
 import { ReactComponent as Logo } from '../images/faceIcon.svg';
@@ -32,7 +32,7 @@ const Navbar = () => {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
-            navbar.classList.toggle("sticky", window.scrollY > 0);
+            navbar.classList.toggle("sticky", window.scrollY > 10);
         });
     }, []);
 
@@ -41,8 +41,6 @@ const Navbar = () => {
         setVisible((scrollPosition > currentScrollPos) || currentScrollPos < 10);
         setScrollPosition(currentScrollPos);
     }, [scrollPosition]);
-
-
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);

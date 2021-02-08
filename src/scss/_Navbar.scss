@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-01-30 01:56:32
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-08 02:08:09
+* @Last Modified time: 2021-02-08 13:31:19
 */
 
 .navbar {
@@ -16,8 +16,8 @@
     padding-left: 15rem;
     padding-right: 15rem;
     height: 10rem;
-    background: transparent;
-    transition: height .2s, top .2s;
+    background: url(../images/noise.png), $color-dark-purple;
+    transition: height .2s, top .3s;
     z-index: 999;
 
     @media screen and (max-width: 75em) {
@@ -39,6 +39,7 @@
         box-shadow: 0 10px 30px -10px rgba(0,0,0, .5);
         height: 8.7rem;
         backdrop-filter: blur(8px);
+        background: rgba(54, 29, 50,.85);
     }
 
     &__links {
