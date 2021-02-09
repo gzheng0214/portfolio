@@ -2,13 +2,13 @@
 * @Author: Gavin
 * @Date:   2021-01-29 19:11:25
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-09 01:36:17
+* @Last Modified time: 2021-02-09 15:47:28
 */
 import React from 'react';
-import About from './About';
-import Hero from './Hero';
-import ListSkills from './ListSkills';
-import Projects from './Projects';
+import About from '../components/About';
+import Hero from '../components/Hero';
+import ListSkills from '../components/ListSkills';
+import Projects from '../components/Projects';
 
 const App = () => {
 	return (
