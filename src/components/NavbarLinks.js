@@ -2,14 +2,14 @@
  * @Author: Gavin
  * @Date:   2021-02-05 17:28:50
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-08 21:36:17
+ * @Last Modified time: 2021-02-09 01:15:23
  */
 import React from 'react';
 import NavbarLink from './NavbarLink';
 
 const NavbarLinks = (props) => {
 
-	const sections = ["about", "skills", "projects", "contact"];
+	const sections = ["about", "projects", "contact"];
 
     return (
         <ul className={'navbar__links' + props.className} onClick={props.onClick} style={props.style}>

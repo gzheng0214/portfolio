@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-01-30 01:44:33
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-08 12:14:57
+ * @Last Modified time: 2021-02-09 01:33:27
  */
 import React, { useState, useEffect, useCallback } from 'react';
 import { ReactComponent as Logo } from '../images/faceIcon.svg';
@@ -55,6 +55,14 @@ const Navbar = () => {
         if (e.target.closest('li').classList.value.includes('--mobile')) {
             setOpen(!open)
         }
+        if (!e.target.closest('a')) return;
+        const section = document.getElementById(e.target.closest('a').getAttribute('href').slice(1));
+        const sectionCoords = section.getBoundingClientRect();
+        window.scrollTo({
+            left: sectionCoords.left + window.pageXOffset,
+            top: sectionCoords.top + window.pageYOffset,
+            behavior: 'smooth'
+        });
     };
 
     const menuClassName = open ? 'navbar__hamburger--open' : 'navbar__hamburger--closed';
@@ -62,7 +70,7 @@ const Navbar = () => {
     return (
         <nav className="navbar" style={{top: visible ? '0' : `-${document.querySelector('.navbar').offsetHeight}px`}}>
         <div className="logo">
-            <Logo />
+            <a href="https://gzheng.dev"><Logo /></a>
             <span className="logo__text">Gavin</span>
         </div>
         <NavbarLinks className="" onClick={onClick} />

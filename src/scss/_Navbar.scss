@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-01-30 01:56:32
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-08 13:31:19
+* @Last Modified time: 2021-02-09 01:13:53
 */
 
 .navbar {
@@ -226,6 +226,14 @@
     width: 13rem;
     display: flex;
     align-items: center;
+
+    a {
+        display: flex;
+
+        &:hover svg {
+            filter: brightness(1.05);
+        }
+    }
 
     &__text {
         font-weight: 700;

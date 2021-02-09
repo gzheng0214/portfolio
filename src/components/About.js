@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-08 13:25:21
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-08 20:50:12
+* @Last Modified time: 2021-02-09 01:19:57
 */
 import React from 'react';
 import Title from './Title';
@@ -11,7 +11,7 @@ import resume from '../resume/gavins_resume.pdf'
 
 const About = () => {
 	return (
-		<div className="about">
+		<div className="about" id="about">
 		<Title  text="<About>" />
 		<div className="about__container">
 		<div className="about-content">
