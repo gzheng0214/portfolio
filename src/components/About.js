@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-08 13:25:21
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-08 20:06:54
+* @Last Modified time: 2021-02-08 20:50:12
 */
 import React from 'react';
 import Title from './Title';
@@ -16,7 +16,7 @@ const About = () => {
 		<div className="about__container">
 		<div className="about-content">
 		<p>Hello, I'm Gavin, an anspiring front end developer based in Bayonne, NJ. I'm currently in my third year studying computer science at Boston University.</p>
-		<p>I've been fascinated by web development and its intricate designs ever since I was young. As an aspiring front end developer, I like to build simple, user experiences.</p>
+		<p>I've been fascinated by web development and its intricate designs ever since I was young. As an aspiring front end developer, I like to build simple, beautiful user experiences.</p>
 		<div className="about-content__container">
 			<div className="about-content__image"></div>
 			<div>
