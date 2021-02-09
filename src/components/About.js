@@ -2,11 +2,12 @@
 * @Author: Gavin
 * @Date:   2021-02-08 13:25:21
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-08 18:04:22
+* @Last Modified time: 2021-02-08 20:06:54
 */
 import React from 'react';
 import Title from './Title';
 import ListItem from './ListItem';
+import resume from '../resume/gavins_resume.pdf'
 
 const About = () => {
 	return (
@@ -26,6 +27,7 @@ const About = () => {
 					<li><ListItem text="javascript" /></li>
 					<li><ListItem text="react" /></li>
 				</ul>
+				<p>Here's my <a className="resume" href={resume} target="_blank" rel='noopener noreferrer'>Resume</a></p>
 			</div>
 		</div>
 		</div>
