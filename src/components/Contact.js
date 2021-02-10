@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-02-10 15:16:41
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-10 17:35:38
+ * @Last Modified time: 2021-02-10 17:43:26
  */
 import React, { useState } from 'react';
 import Title from './Title';
@@ -72,7 +72,8 @@ const Contact = () => {
     return (
         <section className="contact">
 		<Title text="<Contact>" />
-		<form name="contact" method="POST" onSubmit={handleSubmit} netlify autocomplete="off" >
+		<form name="contact" method="POST" onSubmit={handleSubmit} data-netlify="true" >
+		<input type="hidden" name="form-name" value="contact" />
 		<div className="input">
 		<label htmlFor="name">Name</label> 
 		<p style={{color: 'red', fontSize: '1.4rem'}}>{nameError}</p>
