@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-02-10 15:16:41
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-10 18:03:26
+ * @Last Modified time: 2021-02-10 18:06:01
  */
 import React, { useState } from 'react';
 import Title from './Title';
@@ -57,14 +57,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         const isValid = validate();
-        if (isValid) {
-        	setName("");
-        	setEmail("");
-        	setMessage("");
-        	setNameError("");
-        	setEmailError("");
-        	setMessageError("");
-        } else {
+        if (!isValid) {
         	e.preventDefault();
         }
     };
