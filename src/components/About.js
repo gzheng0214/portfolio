@@ -2,12 +2,13 @@
 * @Author: Gavin
 * @Date:   2021-02-08 13:25:21
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-10 03:27:05
+* @Last Modified time: 2021-02-10 04:46:13
 */
 import React from 'react';
 import Title from './Title';
 import ListItem from './ListItem';
-import resume from '../resume/gavins_resume.pdf'
+import resume from '../resume/gavins_resume.pdf';
+import flower from '../images/flower.jpg';
 
 const About = () => {
 	return (
@@ -18,7 +19,7 @@ const About = () => {
 		<p>Hello, I'm Gavin, an anspiring front end developer based in Bayonne, NJ. I'm currently in my third year studying computer science at Boston University.</p>
 		<p>I've been fascinated by web development and its intricate designs ever since I was young. As an aspiring front end developer, I like to build simple, beautiful user experiences.</p>
 		<div className="about-content__container">
-			<div className="about-content__image"></div>
+			<img src={flower} alt="Flower" className="about-content__image" />
 			<div>
 				<p>Here are a few technologies I've been working with recently:</p>
 				<ul className="about-content__skills">

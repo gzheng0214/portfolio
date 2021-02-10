@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-09 01:34:49
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-10 03:30:23
+* @Last Modified time: 2021-02-10 04:33:31
 */
 import React from 'react';
 import Title from './Title';
@@ -17,7 +17,7 @@ const Projects = () => {
 	}
 
 	return (
-		<section className="projects">
+		<section className="projects" id="projects">
 			<Title text="<Projects>" />
 			<div className="projects__container">
 			{renderCard()}

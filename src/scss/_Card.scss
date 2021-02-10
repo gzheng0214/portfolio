@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-10 00:37:15
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-10 04:26:02
+* @Last Modified time: 2021-02-10 04:36:16
 */
 .card {
     width: 41rem;
@@ -51,6 +51,7 @@
         p {
             font-size: 1.4rem;
             font-weight: 700;
+            line-height: 1.8;
         }
     }
 
@@ -77,6 +78,7 @@
             color: $color-black;
             text-decoration: none;
             display: flex;
+            height: 3rem;
             width: 8rem;
             justify-content: center;
             align-items: center;

@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-08 13:26:15
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-10 03:41:20
+* @Last Modified time: 2021-02-10 04:46:36
 */
 .about {
 
@@ -88,6 +88,7 @@
             height: 23rem;
             width: 29rem;
             background-color: $color-black;
+            object-fit: cover;
 
             @media screen and (max-width: 50em) {
                 justify-self: center;
