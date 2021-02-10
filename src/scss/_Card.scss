@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-10 00:37:15
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-10 04:36:16
+* @Last Modified time: 2021-02-10 15:24:34
 */
 .card {
     width: 41rem;
@@ -42,6 +42,10 @@
         left: 7px;
         border: 1px solid $color-sea-green;
         z-index: -1;
+
+        @media screen and (max-width: 43.75em) {
+            left: 5px;
+        }
     }
 
     &__text {

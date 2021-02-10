@@ -1,0 +1,114 @@
+/*
+* @Author: Gavin
+* @Date:   2021-02-10 15:16:50
+* @Last Modified by:   Gavin
+* @Last Modified time: 2021-02-10 16:44:35
+*/
+.contact {
+    padding-top: 7.8rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 8rem;
+    background-color: $color-floral-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 75em) {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    @media screen and (max-width: 56.25em) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @media screen and (max-width: 47.8125em) {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+
+    .title {
+        h1 {
+            color: $color-dark-purple;
+        }
+
+        margin-bottom: 8.6rem;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: minmax(25rem, 55rem);
+
+        .input {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                color: $color-dark-purple;
+                font-weight: 700;
+                letter-spacing: .32px;
+                text-transform: uppercase;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                background: url(../images/arrow.svg) no-repeat scroll 14px 15px;
+                background-color: $color-beige;
+                font-family: 'Lekton', sans-serif;
+                font-weight: 700;
+                font-size: 1.6rem;
+                padding: 1.6rem 3rem;
+
+                &:focus {
+                    outline: 2px solid $color-orange;
+                }
+            }
+
+            textarea {
+                resize: none;
+                height: 13rem;
+            }
+
+            button {
+                margin-top: 5rem;
+                width: 22rem;
+                height: 4.8rem;
+                align-self: center;
+                background-color: $color-orange;
+                display: flex;
+                align-items: center;
+                padding-left: 2.4rem;
+                font-family: 'Lekton', sans-serif;
+                border: none;
+                cursor: pointer;
+                transition: background-color .3s;
+
+                &:focus {
+                	outline: 2px solid $color-black;
+                }
+
+                &:hover {
+                    background-color: darken($color-orange, 8%);
+                }
+            }
+
+            input,
+            textarea,
+            button {
+                box-shadow: 4px 4px 0px $color-dark-blue;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 1.2rem;
+
+                input {
+                    height: 4.4rem;
+                }
+            }
+        }
+    }
+}
