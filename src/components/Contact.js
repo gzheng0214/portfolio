@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-02-10 15:16:41
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-10 17:18:17
+ * @Last Modified time: 2021-02-10 17:20:22
  */
 import React, { useState } from 'react';
 import Title from './Title';
@@ -64,6 +64,8 @@ const Contact = () => {
         	setNameError("");
         	setEmailError("");
         	setMessageError("");
+        } else {
+        	e.preventDefault();
         }
     };
 
