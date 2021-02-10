@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-02-10 15:16:41
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-10 18:06:01
+ * @Last Modified time: 2021-02-10 18:13:16
  */
 import React, { useState } from 'react';
 import Title from './Title';
@@ -63,7 +63,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
 		<Title text="<Contact>" />
 		<form name="contact" method="post" onSubmit={handleSubmit} data-netlify="true" >
 		<input type="hidden" name="form-name" value="contact" />
