@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-08 13:26:15
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-08 21:33:06
+* @Last Modified time: 2021-02-10 03:41:20
 */
 .about {
 
@@ -45,15 +45,6 @@
         @media screen and (max-width: 50em) {
             grid-template-rows: 75rem;
         }
-
-        @media screen and (max-width: 43.75em) {
-            grid-template-rows: 85rem;
-        }
-
-
-        @media screen and (max-width: 31.25em) {
-            grid-template-rows: 90rem;
-        }
     }
 
     &-content {
@@ -69,6 +60,7 @@
         line-height: 1.3;
 
         @media screen and (max-width: 43.75em) {
+            font-size: 1.4rem;
             top: -.5rem;
             left: -.3rem;
         }
@@ -119,6 +111,10 @@
 
             .listItem {
                 font-size: 1.6rem;
+
+                @media screen and (max-width: 43.75em){
+                    font-size: 1.3rem;
+                }
             }
         }
 
@@ -128,7 +124,7 @@
     }
 }
 
-.resume {
+.button--orange {
     height: 100%;
     width: 10rem;
     background-color: $color-beige;

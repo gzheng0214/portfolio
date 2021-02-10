@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-01-30 01:56:32
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-09 01:13:53
+* @Last Modified time: 2021-02-10 01:08:48
 */
 
 .navbar {
@@ -36,10 +36,10 @@
     }
 
     &.sticky {
-        box-shadow: 0 10px 30px -10px rgba(0,0,0, .5);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .5);
         height: 8.7rem;
         backdrop-filter: blur(8px);
-        background: rgba(54, 29, 50,.85);
+        background: rgba(54, 29, 50, .85);
     }
 
     &__links {
@@ -233,6 +233,12 @@
         &:hover svg {
             filter: brightness(1.05);
         }
+
+        svg {
+            @media screen and (max-width: 43.75em) {
+                height: 4.6rem;
+            }
+        }
     }
 
     &__text {
@@ -240,6 +246,10 @@
         font-size: 2.6rem;
         letter-spacing: .32px;
         padding-left: .7rem;
+
+        @media screen and (max-width: 43.75em) {
+            font-size: 1.8rem;
+        }
     }
 }
 

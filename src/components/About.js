@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2021-02-08 13:25:21
 * @Last Modified by:   Gavin
-* @Last Modified time: 2021-02-09 01:19:57
+* @Last Modified time: 2021-02-10 03:27:05
 */
 import React from 'react';
 import Title from './Title';
@@ -11,7 +11,7 @@ import resume from '../resume/gavins_resume.pdf'
 
 const About = () => {
 	return (
-		<div className="about" id="about">
+		<section className="about" id="about">
 		<Title  text="<About>" />
 		<div className="about__container">
 		<div className="about-content">
@@ -27,12 +27,12 @@ const About = () => {
 					<li><ListItem text="javascript" /></li>
 					<li><ListItem text="react" /></li>
 				</ul>
-				<p>Here's my <a className="resume" href={resume} target="_blank" rel='noopener noreferrer'>Resume</a></p>
+				<p>Here's my <a className="button--orange" href={resume} target="_blank" rel='noopener noreferrer'>Resume</a></p>
 			</div>
 		</div>
 		</div>
 		</div>
-		</div>
+		</section>
 	);
 };
 
