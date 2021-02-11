@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-02-10 02:49:10
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-10 04:23:57
+ * @Last Modified time: 2021-02-10 18:45:25
  */
 
 import covid19 from '../images/covid19.png';
@@ -21,7 +21,7 @@ const projects = [{
     },
     {
         title: "Burger Shack",
-        description: "A website I created for a fictional burger restaurant. I practiced with various CSS properties and implemented various JavaScript functions.",
+        description: "A responsive website I created for a fictional burger restaurant. I practiced with various CSS properties and implemented various JavaScript functions.",
         skills: ['html', 'css/scss', 'javascript'],
         img: burger_shack,
         url: {
