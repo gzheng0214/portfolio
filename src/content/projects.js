@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Calculator",
     description:
-      "This was a project given as a coding assignment for an interview. Calculator stores results in localStorage and uses Socket.io to send calculations to each user on the page.",
+      "Calculator displays the 10 most recent calculations and stores results in localStorage and uses Socket.io to send calculations to each user on the page.",
     skills: ["html", "css/scss", "javascript", "React", "Node.js"],
     img: calculator,
     url: {
