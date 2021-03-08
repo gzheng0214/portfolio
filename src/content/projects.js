@@ -2,7 +2,7 @@
  * @Author: Gavin
  * @Date:   2021-02-10 02:49:10
  * @Last Modified by:   Gavin
- * @Last Modified time: 2021-02-10 18:45:25
+ * @Last Modified time: 2021-02-25 04:17:23
  */
 
 import covid19 from "../images/covid19.png";
@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Calculator",
     description:
-      "Calculator displays the 10 most recent calculations and stores results in localStorage and uses Socket.io to send calculations to each user on the page.",
+      "Calculator displays the 10 most recent calculations and stores results in localStorage. I used Socket.io to send calculations to each user on the page.",
     skills: ["html", "css/scss", "javascript", "React", "Node.js"],
     img: calculator,
     url: {
